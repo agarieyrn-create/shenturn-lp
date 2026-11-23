@@ -116,6 +116,8 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
   .macro .cap{bottom:24px}
 }
 </style>
+<link rel="stylesheet" href="motion.css">
+<link rel="preload" as="image" href="images/hero.webp">
 </head>
 <body>
 
@@ -132,7 +134,7 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
 
 <main id="top">
   <div class="hero">
-    <img src="images/hero.png" alt="水滴をまとったシェンターンの缶とレモン、ミント">
+    <img fetchpriority="high" decoding="async" src="images/hero.webp" alt="水滴をまとったシェンターンの缶とレモン、ミント">
     <div class="wrap">
       <div class="copy">
         <h1>夕方の頭を、<br>透明にする。</h1>
@@ -142,19 +144,19 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
     </div>
   </div>
 
-  <section class="empathy">
+  <section class="empathy" data-bg="#fbfaf4">
     <div class="wrap grid">
       <div>
         <p class="label">01　夕方</p>
         <h2>17時。仕事は終わったのに、<br>頭だけがまだ動いている。</h2>
         <p class="lead">画面を閉じても、考えごとは閉じてくれません。甘い飲みものは重く、水では少し物足りない。そんな夕方のために、この一本を作りました。</p>
       </div>
-      <img src="images/glass.png" alt="氷とレモン、ミントを浮かべた透明な炭酸のグラス" loading="lazy">
+      <img src="images/glass.webp" alt="氷とレモン、ミントを浮かべた透明な炭酸のグラス" loading="lazy" decoding="async">
     </div>
   </section>
 
   <section class="core" id="core">
-    <img src="images/can.png" alt="濡れた石の上に置かれたシェンターンの缶" loading="lazy">
+    <img data-par="x" src="images/can.webp" alt="濡れた石の上に置かれたシェンターンの缶" loading="lazy" decoding="async">
     <div class="wrap">
       <p class="label">02　特長</p>
       <h2>飲んだあと、軽い。</h2>
@@ -162,7 +164,7 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
     </div>
   </section>
 
-  <section class="ingredients" id="ingredients">
+  <section class="ingredients" id="ingredients" data-bg="#eef3e2">
     <div class="wrap grid">
       <div>
         <p class="label">03　素材</p>
@@ -174,18 +176,18 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
           <div class="row"><dt>バジル</dt><dd>ほんのりと、青い葉の奥行きを足します。</dd></div>
         </dl>
       </div>
-      <img src="images/ingredients.png" alt="ゆず、レモン、ミント、バジルを並べた素材" loading="lazy">
+      <img src="images/ingredients.webp" alt="ゆず、レモン、ミント、バジルを並べた素材" loading="lazy" decoding="async">
     </div>
   </section>
 
   <section class="macro">
-    <img src="images/bubbles.png" alt="透明な炭酸の泡とレモンのクローズアップ" loading="lazy">
+    <img src="images/bubbles.webp" alt="透明な炭酸の泡とレモンのクローズアップ" loading="lazy" decoding="async">
     <div class="wrap cap"><p>色をつけない。香りだけで、飲ませる。</p></div>
   </section>
 
-  <section class="scene">
+  <section class="scene" data-bg="#f4efd2">
     <div class="wrap grid">
-      <img src="images/evening.png" alt="夕暮れの窓辺に置かれた缶とグラス" loading="lazy">
+      <img src="images/evening.webp" alt="夕暮れの窓辺に置かれた缶とグラス" loading="lazy" decoding="async">
       <div>
         <p class="label">04　シーン</p>
         <h2>一日の切り替えに、<br>ちょうどいい。</h2>
@@ -198,7 +200,7 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
     </div>
   </section>
 
-  <section class="guide" id="guide">
+  <section class="guide" id="guide" data-bg="#fbf6e2">
     <div class="wrap">
       <div>
         <p class="label">05　飲み方</p>
@@ -226,5 +228,6 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
   <div class="wrap">このページは、架空の商品「シェンターン」によるデザイン制作例です。実在の企業・商品とは関係ありません。掲載画像は画像生成によるイメージです。</div>
 </footer>
 
+<script src="motion.js" defer></script>
 </body>
 </html>
