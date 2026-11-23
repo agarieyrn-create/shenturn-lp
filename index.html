@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>シェンターン｜夕方の頭を、透明にする炭酸</title>
 <meta name="description" content="ゆず・レモン・ミント・バジルだけで仕立てた、無色透明の炭酸水「シェンターン」。架空の商品によるデザイン制作例です。">
+<link rel="canonical" href="https://agarieyrn-create.github.io/shenturn-lp/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+<meta property="og:title" content="シェンターン｜夕方の頭を、透明にする炭酸">
+<meta property="og:description" content="ゆず・レモン・ミント・バジルだけで仕立てた、無色透明の炭酸水「シェンターン」。架空の商品によるデザイン制作例です。">
+<meta property="og:url" content="https://agarieyrn-create.github.io/shenturn-lp/">
+<meta property="og:image" content="https://agarieyrn-create.github.io/shenturn-lp/images/ogp.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2316302a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
@@ -91,6 +100,16 @@ h2{font-family:"Noto Serif JP",serif;font-size:clamp(28px,4.2vw,48px);line-heigh
 .guide li b{display:block;font-size:18px;margin-bottom:2px}
 .guide li span{color:#33463f;font-size:15px}
 
+/* 商品情報 */
+.spec .grid{display:grid;grid-template-columns:6fr 5fr;gap:72px;align-items:center}
+.spec h2 .en{display:block;font-family:"Noto Sans JP",sans-serif;font-size:14px;font-weight:500;letter-spacing:.22em;color:var(--mute);margin-top:8px}
+.spec dl{margin-top:36px;border-top:1px solid var(--ink)}
+.spec .row{display:grid;grid-template-columns:90px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid #d5dcd2;font-size:15px}
+.spec dt{font-weight:700}
+.spec .note{margin-top:16px;font-size:13px;color:var(--mute)}
+.spec img{width:100%;aspect-ratio:4/5;object-fit:cover}
+.close .label{color:#9fb3ab}
+
 /* 締め */
 .close{background:var(--ink);color:var(--paper)}
 .close h2{font-size:clamp(32px,5vw,60px)}
@@ -108,7 +127,7 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
   .hero .copy{max-width:none}
   .hero img{order:2;position:static;width:100%;-webkit-mask-image:none;mask-image:none;height:auto;aspect-ratio:4/5;margin-top:48px;object-position:50% center}
   .hero h1{font-size:34px}
-  .empathy .grid,.ingredients .grid,.scene .grid{grid-template-columns:1fr;gap:40px}
+  .empathy .grid,.ingredients .grid,.scene .grid,.spec .grid{grid-template-columns:1fr;gap:40px}
   .empathy img{aspect-ratio:4/3}
   .core .wrap{padding-top:64px;padding-bottom:72px}
   .scene .grid>img{order:2}
@@ -128,6 +147,7 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
       <a href="#core">特長</a>
       <a href="#ingredients">素材</a>
       <a href="#guide">飲み方</a>
+      <a href="#spec">商品情報</a>
     </nav>
   </div>
 </header>
@@ -214,12 +234,30 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
     </div>
   </section>
 
+  <section class="spec" id="spec" data-bg="#fbfaf4">
+    <div class="wrap grid">
+      <div>
+        <p class="label">06　商品について</p>
+        <h2>シェンターン<span class="en">SHENTURN</span></h2>
+        <dl>
+          <div class="row"><dt>内容量</dt><dd>350ml（缶）</dd></div>
+          <div class="row"><dt>原材料</dt><dd>炭酸水、香料（ゆず、レモン、ミント、バジル）</dd></div>
+          <div class="row"><dt>カロリー</dt><dd>0kcal（100mlあたり）</dd></div>
+          <div class="row"><dt>価格</dt><dd>1本 ¥180／24本入りケース ¥3,980（税込）</dd></div>
+          <div class="row"><dt>販売</dt><dd>全国のスーパー・コンビニ、公式オンラインストア</dd></div>
+        </dl>
+        <p class="note">※架空の商品です。掲載の内容・価格・販売先はすべて架空です。</p>
+      </div>
+      <img src="images/product.webp" alt="水滴をまとったシェンターンの缶と、レモンの輪切り、ミントの葉" loading="lazy" decoding="async">
+    </div>
+  </section>
+
   <section class="close">
     <div class="wrap">
-      <p class="label" style="color:#9fb3ab">06　さいごに</p>
+      <p class="label">07　さいごに</p>
       <h2>今日の終わりに、<br>透明な一杯を。</h2>
       <p class="lead">特別な準備はいりません。冷やして、注いで、香りを吸い込むだけです。</p>
-      <a class="btn" href="#top">もう一度、はじめから見る</a>
+      <a class="btn" href="#spec">商品情報・購入方法を見る</a>
     </div>
   </section>
 </main>
