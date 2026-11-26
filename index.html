@@ -141,6 +141,7 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
 </style>
 <link rel="stylesheet" href="motion.css">
 <link rel="preload" as="image" href="images/hero.webp">
+<link rel="stylesheet" href="extra.css">
 </head>
 <body>
 
@@ -202,6 +203,17 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
         </dl>
       </div>
       <img width="1536" height="1024" src="images/ingredients.webp" alt="ゆず、レモン、ミント、バジルを並べた素材" loading="lazy" decoding="async">
+    </div>
+  </section>
+
+  <section class="x-sec x-demo x-shen" data-demo="4500,4500,4500,4500" data-bg="#fbfaf4" style="background-color:#fbfaf4">
+    <div class="wrap">
+      <p class="label">香りを選ぶ</p>
+      <h2>今日は、<br>どの香りにしますか。</h2>
+      <div class="x-grid">
+        <div class="x-stage"><div class="x-glass" aria-hidden="true"><div class="x-water" data-bubbles="34"></div><span class="x-leaf"></span></div></div>
+        <div><div class="x-tabs" role="group" aria-label="表示を選ぶ"><button type="button" data-go="0" aria-pressed="false">ゆず</button><button type="button" data-go="1" aria-pressed="false">レモン</button><button type="button" data-go="2" aria-pressed="false">ミント</button><button type="button" data-go="3" aria-pressed="false">バジル</button></div><div class="x-panels"><div data-panel="0"><b>ゆず</b><p>はじめに立つ、<br>はっきりした柑橘の香り。</p></div><div data-panel="1"><b>レモン</b><p>後味を引きしめる、きれいな酸味。</p></div><div data-panel="2"><b>ミント</b><p>鼻に抜ける、冷たく澄んだ涼しさ。</p></div><div data-panel="3"><b>バジル</b><p>最後に残る、青い緑の香りが余韻をつくる。</p></div></div><button type="button" class="x-play" data-play>動きを止める</button><p class="x-note">※色は香りのイメージです。商品は無色透明です。</p></div>
+      </div>
     </div>
   </section>
 
@@ -272,5 +284,6 @@ footer{padding:36px 0;font-size:12px;color:var(--mute)}
 </footer>
 
 <script src="motion.js" defer></script>
+<script src="extra.js" defer></script>
 </body>
 </html>
